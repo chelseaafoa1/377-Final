@@ -1,5 +1,4 @@
 const express = require('express');
-const serverless = require('serverless-http');
 
 const app = express();
 
@@ -19,4 +18,4 @@ app.use((req, res) => {
   res.status(404).send('404 Not Found');
 });
 
-module.exports = serverless(app);
+module.exports = require('serverless-http')(app);
