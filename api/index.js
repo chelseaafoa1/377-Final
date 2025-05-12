@@ -3,7 +3,8 @@ const serverless = require('serverless-http');
 
 const app = express();
 
-app.get('/favicon.ico'), (req, res) => res.status(204).end
+// Favicon fix
+app.get('/favicon.ico', (req, res) => res.status(204).end());
 
 app.get('/', (req, res) => {
   res.send('Hello World');
