@@ -1,7 +1,7 @@
 const express = require('express');
+const serverless = require('serverless-http');
 
 const app = express();
-const serverless = require('serverless-http');
 
 
 app.get('/', (req, res) => {
@@ -13,7 +13,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/quote', (req, res) => {
-  res.json({ quote: "You got this, Chelsea!", author: "ChatGPT" });
+  res.json({ quote: "Testing", author: "chelseaafoa1" });
 });
 
 app.use((req, res) => {
