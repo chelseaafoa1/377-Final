@@ -20,4 +20,6 @@ app.use((req, res) => {
   res.status(404).send('404 Not Found');
 });
 
-module.exports = require('serverless-http')(app);
+module.exports = (req, res) => {
+  res.status(200).json({ message: "If you see this, the serverless function is working!" });
+};
