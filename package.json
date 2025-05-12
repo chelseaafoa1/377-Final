@@ -1,12 +1,12 @@
 {
-    "name": "myapp",
-    "version": "1.0.0",
-    "main": "api/index.js",
-    "scripts": {
-      "start": "node api/index.js"
-    },
-    "dependencies": {
-      "express": "^4.18.2",
-      "serverless-http": "^3.0.0"
-    }
+  "name": "chelsea-vercel-app",
+  "version": "1.0.0",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "serverless-http": "^3.0.0"
   }
+}

@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/quote', (req, res) => {
-  res.json({ quote: "You got this, Chelsea!", author: "ChatGPT" });
+  res.json({ quote: "testing", author: "chelsea" });
 });
 
 app.get('/favicon.ico', (req, res) => res.status(204).end());
