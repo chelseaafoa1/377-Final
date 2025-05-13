@@ -8,14 +8,14 @@
 # Npm 
     This is an addition to node.js.
 # Git
-    A system that is required so that you can track your code and any change that you may make to your project.
+    This system is required so that you can track your code and any change that you may make to your project.
 
 # How to install the application:
     1. First begin with making a cloned version of the repository.
     2. After that, clone the respository: use dashes for bash (```bash), use your information from git hub. Ex: Git Clone: https://github.com/nameofacc/quote-inspiration-app.git.
     3. cd: quote-inspiration-app
 
-# Installing dependecies 🖱️:
+# Installing dependencies 🖱️:
     1. Type this in the terminal- npm install
 
 # This is for running the application ⚙️:
