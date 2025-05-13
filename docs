@@ -43,3 +43,25 @@ Data Shown: The quotes will return all of the quotes.
 
 API Used: GET  https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54 
 This API will show all of the quotes which will be based on the mood that the user chose.
+
+# Bugs
+No audio commands
+Can't filter quotes
+Mobile may need to be redesigned for refinement
+
+# Roadmap
+Feature: Mobile layout. Status: In progress Priority: High
+
+Feature: Audio commands: Not started. Priority: Medium
+
+# Directory
+quote-inspo-app/
+    public/
+    src/
+        index.html
+        style.css
+        app.js
+    docs/
+        developer_manual.md
+    package.json
+    README.md
