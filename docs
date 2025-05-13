@@ -14,51 +14,59 @@
     1. First begin with making a cloned version of the repository.
     2. After that, clone the respository: use dashes for bash (```bash), use your information from git hub. Ex: Git Clone: https://github.com/nameofacc/quote-inspiration-app.git.
     3. cd: quote-inspiration-app
+    ```
+---
 
 # Installing dependencies 🖱️
-    1. Type this in the terminal- npm install
+    1. Type this in the terminal- ```bash npm install ```
 
 # This is for running the application ⚙️
-    1. Type this in the terminal + hit enter - npm run dev
+    1. Type this in the terminal + hit enter - ```bash npm run dev ```
 
 # In production - npm run build ⌨️ 
-    1. Type this in the terminal + hit enter - npm start
-
+    1. Type this in the terminal + hit enter - ```bash npm start ```
+---
 # Tests 🧪 
-    1. Type this in the terminal + hit enter - npm test
+    1. Type this in the terminal + hit enter - ```bash npm test ```
+---
 
 # Documentation for the API (ZenQuotes) 📃
     API: https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54 
-
+---
 # Homepage 🏠
 Data shown: Random inspirational quote 
-    API Used: GET https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54 - This API will fetch all of the random quotes when the user first opens up the page.
-
+    API Used: ```http GET https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54 - This API will fetch all of the random quotes when the user first opens up the page.
+```
+---
 # Browse by Author
 Data shown🔬: 
     Quotes by the author that is chosen.
 
-# API Used: GET /quotes?author=Albert Einstein 
+# API Used: ```http GET /quotes?author=Albert Einstein 
     This API will show all of the quotes in order of the chosen author.
+```
+---
 
 # Browse All Quotes 😃
 Data Shown: 
     The quotes will return all of the quotes.
 
-API Used: GET  https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54 
+API Used: ```http GET  https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54 
 This API will show all of the quotes which will be based on the mood that the user chose.
-
+```
+---
 # Bugs 🐜 
     No audio commands just yet.
     Can't filter quotes by mood.
     Mobile may need to be redesigned for refinement.
-
+---
 # Roadmap 🗺️
     Feature: Mobile layout. Status: In progress Priority: High
     Feature: Audio commands: Not started. Priority: High
     Feature: Filtering by mood. Status: In progress Priority: Medium
-
+---
 # Directory 🛣️
+```
 quote-inspo-app/
     public/
     src/
@@ -69,5 +77,7 @@ quote-inspo-app/
         developer_manual.md
     package.json
     README.md
-
-#Let's continue creating unique projects that will boost producivity and improve the moods of those all around the world!
+```
+---
+# Note: 
+Let's continue creating unique projects that will boost producivity and improve the moods of those all around the world!
