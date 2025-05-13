@@ -1,0 +1,14 @@
+# Daily Quote & Inspiration App - Developer Manual
+
+# This manual will provide you with information on the API, common problems, how to run the application, and installation details.
+
+# Applications required to install:
+# Node.js
+# This application can be version 18 and above.
+# Npm 
+# This is an addition to node.js.
+# Git
+# How to install the application:
+# First begin with making a cloned version of the repository
+# Git Clone: https://github.com/your-username/quote-inspo-app.git
+# Cd quote-inspo-app
