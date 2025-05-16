@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en"> <!--html-->
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to styling-->
+    <link rel="stylesheet" href="quotes1.css"> 
+    <!--Javascript libraries-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script src="quotes1.js" defer></script>
+
+    <title>Daily Quotes Page!</title>
+</head>
+<body>
+    <!--NAVIGATION-->
+<nav id="nav">
+    <ul>
+        <li><a href="main.html">Home Page</a></li><!--homepage-->
+        <li><a href="about.html">About Page</a></li><!--about-->
+        <li><a href="quotes1.html">Quotes </a></li><!--quotes-->
+    </ul>
+</nav>
+    <main id="typequote">
+        <button id="randomq" onclick="quoteDisplay()">random quotes</button>
+        <button id="searchq" onclick="quoteLife()">search quote of your choice</button>
+        <button id="authorq" onclick="quoteAuthor()">get quote from an author!</button>
+    </main>
+    <div id="quoteshown"></div>
+<!--FOOTER-->
+<footer id="footer">
+    <p>Created by: Chelsea Afoakwah</p> 
+</footer>
+</body>
+</html>
+
+
+

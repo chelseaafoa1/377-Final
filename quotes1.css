@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(123, 224, 148);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 20.1px;
+    margin: 0;
+    text-align: center;
+    padding:0;
+}
+
+
+nav{
+    text-align: center;
+    background-color:#9f61d6;
+    padding: 20px 0;
+}
+
+
+#nav ul{
+    padding: 0;
+    list-style: none;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    width: 100%;
+}
+#nav ul li{
+    background-color: rgb(209, 158, 228);
+    padding: 15px 20px;
+    display: inline-block;
+    margin: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+#nav ul li:hover{
+    background-color: rgb(73, 180, 209);
+    padding: 15px 20px;
+    display: inline-block;
+    margin: 0;
+}
+
+#nav ul li a {
+    color:#1f0437;
+    font-weight: bold;
+   
+}
+
+#typequote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+#typequote button{
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    cursor: pointer;
+    
+}
+
+
+#typequote button:hover{
+    background-color:rgb(127, 217, 205);
+    color: black;
+
+}
+
+
+
+#footer{
+
+    text-align: center;
+    color: #08030d;;
+    background-color: #9f61d6;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    clear: both;
+    padding: 15px;
+}
+
+#quoteshown {
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+}
+#quoteshown ul li{
+    background-color: rgb(209, 158, 228);
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
