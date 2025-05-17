@@ -1,4 +1,3 @@
-
 function quoteDisplay(){
     fetch("https://zenquotes.io/api/random/9d37e36685009a0daa662617d3288c54")
     .then((resp) => resp.json())

@@ -1,16 +1,25 @@
-export default async function handler(req, res){
-    const {createClient} = require('@supabase/supabase-js');
+export default async function handler(req, res) {
+  try {
+    if (req.method !== 'GET') {
+      return res.status(405).json({ error: 'Only GET requests allowed' });
+    }
 
-    const supabase=createClient(
-        process.env.SUPABASE_URL,
-        process.env.SUPABASE_ANON_KEY
+    const { createClient } = require('@supabase/supabase-js');
+
+    const supabase = createClient(
+      process.env.SUPABASE_URL,
+      process.env.SUPABASE_ANON_KEY
     );
 
+    const { data, error } = await supabase.from('favorites').select('*');
 
-const { data, error } = await supabase.from('favorites').select('*');
+    if (error) {
+      return res.status(500).json({ error: error.message });
+    }
 
-if (error){
-     return res.status(500).json({ error: error.message});
-}
-res.status(200).json(data);
+    return res.status(200).json(data);
+  } catch (err) {
+    console.error("Server Error:", err);
+    return res.status(500).json({ error: 'Unexpected server error' });
+  }
 }
