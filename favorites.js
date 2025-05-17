@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('/api/getFavs')
+  fetch('http://localhost:3000/api/getFavs')
     .then(res => res.json())
     .then(data => {
       const container = document.getElementById('favorites-list');
@@ -22,7 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     })
     .catch(err => {
-      console.error('Error loading quotes:', err);
-      document.getElementById('favorites-list').innerText = "Failed to load saved quotes.";
-    });
+  console.error('❌ Error loading quotes:', err);
+  if (err instanceof Response) {
+    err.text().then(text => console.error('🔍 Response text:', text));
+  }
+  document.getElementById('favorites-list').innerText = "Failed to load saved quotes.";
+});
+
 });

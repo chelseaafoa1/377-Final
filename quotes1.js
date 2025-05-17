@@ -14,6 +14,8 @@ function quoteDisplay(){
 });
 }
 
+
+
 /*function quoteLife(){
     fetch("https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54")
         .then((resp) => resp.json())
@@ -71,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 });
 
 function saveQuote(quote, author){
-    fetch('/api/addFavs', {
+    fetch('http://localhost:3000/api/addFavs', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({quote, author})
@@ -81,12 +83,18 @@ function saveQuote(quote, author){
     .catch (err => console.error(err));
 }
 
-function saveRecentQuote(){
-    const quote = document.getElementById("quoteshown").innerText;
-    if (!quote.includes("—")) return alert("no quote loaded");
-    const [text, author] = quote.split("—");
-    saveQuote(text.replace(/"/g, "").trim(), author.trim());
+function saveRecentQuote() {
+  const quoteBlock = document.getElementById("quoteshown").innerText;
+  if (!quoteBlock.includes("—")) return alert("no quote loaded");
+
+  const [text, author] = quoteBlock.split("—");
+  const cleanedQuote = text.replace(/"/g, "").trim();
+  const cleanedAuthor = author.trim();
+
+  console.log("✅ Trying to save:", cleanedQuote, cleanedAuthor); // ✅ now they exist
+  saveQuote(cleanedQuote, cleanedAuthor);
 }
+
 
 if(annyang){
     const commands= {

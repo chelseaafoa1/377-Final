@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     }
 
     const { data, error } = await supabase
-      .from('favorites')
+      .from('quote')
       .insert([{ quote, author }]);
 
     if (error) {
