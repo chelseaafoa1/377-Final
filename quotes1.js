@@ -15,7 +15,7 @@ function quoteDisplay(){
 });
 }
 
-function quoteLife(){
+/*function quoteLife(){
     fetch("https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54")
         .then((resp) => resp.json())
         .then((data) => {  
@@ -37,9 +37,9 @@ function quoteLife(){
      });
     }
 
-function quoteAuthor(){
-    const author = prompt("enter author's name");
-    if (!author) return;
+/* function quoteAuthor(){
+    // const author = prompt("enter author's name");
+    //if (!author) return;
 
     const encodedHash="9d37e36685009a0daa662617d3288c54";
     const encodedAuthor=encodeURIComponent(author.trim());
@@ -62,11 +62,39 @@ function quoteAuthor(){
         document.getElementById("quoteshown").innerText = "Failed to load quote.";
      });
     }
-
+*/
 document.addEventListener("DOMContentLoaded", () =>{
     new Typed("#quoteshown", {
-        strings: ["Welcome!"],
+        strings: ["Your Quote Of The Day!"],
         typeSpeed: 50,
         showCursor: false,
     });
 });
+
+function saveQuote(quote, author){
+    fetch('/api/addFavs', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({quote, author})
+    })
+    .then(res => res.json())
+    .then(data => alert("saved"))
+    .catch (err => console.error(err));
+}
+
+function saveRecentQuote(){
+    const quote = document.getElementById("quoteshown").innerText;
+    if (!quote.includes("—")) return alert("no quote loaded");
+    const [text, author] = quote.split("—");
+    saveQuote(text.replace(/"/g, "").trim(), author.trim());
+}
+
+if(annyang){
+    const commands= {
+        'quote': quoteDisplay,
+        'save': saveRecentQuote,
+        'new quote': quoteDisplay
+    };
+    annyang.addCommands(commands);
+    annyang.start();
+}
