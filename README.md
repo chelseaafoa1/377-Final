@@ -16,4 +16,4 @@ It is intended to promote healthy and positive thinking.
 3. Google Chrome - Windows, macOS, Android
 
 # Developer Manual
-This is a link to the Developer Manual for more information on the API, setup, and more!: https://docs.google.com/document/d/1z8aCwVu_IIKWzJDQyyzq97m-uVQ79dqP1DNmLw7-Rg4/edit?tab=t.0
+This is a link to the Developer Manual for more information on the API, setup, and more!: https://github.com/chelseaafoa1/377-Final/blob/main/docs
