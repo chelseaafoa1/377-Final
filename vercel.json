@@ -3,12 +3,6 @@
   "builds": [
     { "src": "api/*.js", "use": "@vercel/node" } 
 
-  ],
-
-  "functions": {
-    "api/addFavs.js": {
-      "maxDuration": 60
-    }
-  }
+  ]
 
 }
