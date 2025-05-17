@@ -15,7 +15,21 @@ nav{
     padding: 20px 0;
 }
 
+button {
+    background-color:#64f4f9;
+    border: 2px;
+    border-radius: 15px;
+    font-size: 35px;
+    padding: 12px 24px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 
+}
+button:hover{
+    background-color:antiquewhite;
+    color: rgb(0, 0, 0);
+}
 #nav ul{
     padding: 0;
     list-style: none;
