@@ -2,5 +2,14 @@
   "version": 2,
   "builds": [
     { "src": "api/*.js", "use": "@vercel/node" } 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/index.js" }
+=======
+>>>>>>> b689ac5 (fix vercel routing and quotes)
+>>>>>>> ed30fc281d4112c6b9e904ae31753f4ad94c703c
   ]
 }
