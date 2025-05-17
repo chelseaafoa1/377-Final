@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export default async function handler(req, res){
     if (req.method !=='POST') {
         return res.status(405).json({error: 'only POST request'})
@@ -22,7 +21,6 @@ if (error) {
 res.status(200).json({message: 'Saved!', data});
 }
 
-=======
 export default async function handler(req, res){
     if (req.method !=='POST') {
         return res.status(405).json({error: 'only POST request'})
@@ -45,5 +43,3 @@ if (error) {
 }
 res.status(200).json({message: 'Saved!', data});
 }
-
->>>>>>> ed30fc281d4112c6b9e904ae31753f4ad94c703c
