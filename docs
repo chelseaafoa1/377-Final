@@ -12,7 +12,7 @@
 
 # How to install the application
     1. First begin with making a cloned version of the repository.
-    2. After that, clone the respository: use dashes for bash (```bash), use your information from git hub. Ex: Git Clone: https://github.com/nameofacc/quote-inspiration-app.git.
+    2. After that, clone the repository: use dashes for bash (```bash), use your information from git hub. Ex: Git Clone: https://github.com/nameofacc/quote-inspiration-app.git.
     3. cd: quote-inspiration-app
     ```
 ---
@@ -33,7 +33,12 @@
 # Documentation for the API (ZenQuotes) 📃
     API: https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54 
 ---
-# Homepage 🏠
+# Home Page 🏠
+Data shown: Users can choose a mood based on how they feel.
+Voice Commands: This can be done by the voice commands by saying out loud if they are happy, sad, neutral.
+    API Used: https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js
+
+# Quotes Page 😃🥲😐
 Data shown: Random inspirational quote 
     API Used: ```http GET https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54 - This API will fetch all of the random quotes when the user first opens up the page.
 ```
@@ -70,9 +75,27 @@ This API will show all of the quotes which will be based on the mood that the us
 quote-inspo-app/
     public/
     src/
-        index.html
-        style.css
-        app.js
+        about.css
+        about.html
+        addFavs.js
+        developer_manual.md
+        favorites.html
+        favorites.js
+        getFavs.js
+        index.js
+        main.css
+        main.html
+        main.js
+        node_modules/
+        package-lock.json
+        package.json
+        quotes1.css
+        quotes1.html
+        quotes1.js
+        readme.md
+        server.js
+        supabase_client.js
+        vercel.json
     docs/
         developer_manual.md
     package.json
