@@ -10,18 +10,18 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Save a new quote
-// Save a new quote
+
 app.post('/api/addFavs', async (req, res) => {
   const { quote, author } = req.body;
-
-
+  //console.log("💾 Trying to save:", quote, author);
+  //console.log("📦 Payload going to Supabase:", { quote, author }); // 
 
   const { data, error } = await supabase
-    .from('quotes') // ✅ HERE
+    .from('quotes') // 
     .insert([{ quote, author }]);
 
   if (error) {
-    console.error("❌ Supabase insert error:", error);
+    //console.error(" Supabase insert error:", error);
     return res.status(500).json({ error: error.message });
   }
 
@@ -30,18 +30,17 @@ app.post('/api/addFavs', async (req, res) => {
 
 app.get('/api/getFavs', async (req, res) => {
   const { data, error } = await supabase
-    .from('quotes') // ✅ HERE
+    .from('quotes') // 
     .select('*')
     .order('id', { ascending: false });
 
   if (error) {
-    console.error("❌ Supabase fetch error:", error);
+    //console.error("Supabase fetch error:", error);
     return res.status(500).json({ error: error.message });
   }
 
   res.json(data);
 });
-
 
 
 app.listen(PORT, () => {

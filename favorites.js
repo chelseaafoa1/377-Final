@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('http://localhost:3000/api/getFavs')
     .then(res => res.json())
     .then(data => {
-      const container = document.getElementById('favorites-list');
+      const container = document.getElementById('favorites-list'); //FAVORITES
       container.innerHTML = '';
 
       if (!data || data.length === 0) {
-        container.innerHTML = '<p>No saved quotes yet.</p>';
+        container.innerHTML = '<p>No saved quotes yet.</p>'; //NO SAVED QUOTES
         return;
       }
 
@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     })
     .catch(err => {
-  console.error('❌ Error loading quotes:', err);
+  console.error(' Error loading quotes:', err); //ERROR
   if (err instanceof Response) {
-    err.text().then(text => console.error('🔍 Response text:', text));
+    err.text().then(text => console.error('Response text:', text));
   }
   document.getElementById('favorites-list').innerText = "Failed to load saved quotes.";
-});
+}); //FAILED TO LOAD
 
 });
