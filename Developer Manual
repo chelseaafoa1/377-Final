@@ -13,7 +13,7 @@
 # How to install the application
     1. First begin with making a cloned version of the repository.
     2. After that, clone the repository: use dashes for bash (```bash), use your information from git hub. Ex: Git Clone: https://github.com/nameofacc/quote-inspiration-app.git.
-    3. cd: quote-inspiration-app
+    3. Go to project - cd: quote-inspiration-app
     ```
 ---
 
@@ -42,13 +42,14 @@ Voice Commands: This can be done by the voice commands by saying: "happy", "sad"
 Data shown: Random inspirational quote 
     API Used: ```http GET https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54 - This API will fetch all of the random quotes when the user first opens up the page.
 ```
-Data Show: Users can ask for a new quote and save it to the "Saved Quotes" page.
+Data shown: Users can ask for a new quote and save it to the "Saved Quotes" page.
 Voice Commands: This can be done by the voice commands by saying out loud: "new quote", "save", "quote".
     API Used: https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js
 ---
-# Browse by Author
-Data shown🔬: 
-    Quotes by the author that is chosen.
+
+# Favorites Page 💓
+Data shown: Saved quotes stored in Supabase
+
 
 # API Used: ```http GET /quotes?author=Albert Einstein 
     This API will show all of the quotes in order of the chosen author.
@@ -63,6 +64,9 @@ API Used: ```http GET  https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d
 This API will show all of the quotes which will be based on the mood that the user chose.
 ```
 ---
+# Authored API Endpoints: 💖
+1. POST /api/addFavs - saves quote to database (Supabase).
+2. GET /api/getFavs - retrieves all saved quotes.
 # Bugs 🐜 
     No audio commands just yet.
     Can't filter quotes by mood.
@@ -78,31 +82,15 @@ This API will show all of the quotes which will be based on the mood that the us
 quote-inspo-app/
     public/
     src/
-        about.css
-        about.html
-        addFavs.js
-        developer_manual.md
-        favorites.html
-        favorites.js
-        getFavs.js
-        index.js
-        main.css
-        main.html
-        main.js
-        node_modules/
-        package-lock.json
-        package.json
-        quotes1.css
-        quotes1.html
-        quotes1.js
-        readme.md
-        server.js
+        about.css, about.html, about.js
+        main.html, main.js, main.css
+        quotes1.html, quotes1.js, quotes1.css
+        favorites.html, favorites.js
         supabase_client.js
-        vercel.json
-    docs/
-        developer_manual.md
-    package.json
+        server.js
     README.md
+    developer_manual.md
+    package.json
 ```
 ---
 # Note: 
