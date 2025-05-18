@@ -35,13 +35,16 @@
 ---
 # Home Page 🏠
 Data shown: Users can choose a mood based on how they feel.
-Voice Commands: This can be done by the voice commands by saying out loud if they are happy, sad, neutral.
+Voice Commands: This can be done by the voice commands by saying: "happy", "sad", "neutral".
     API Used: https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js
 
 # Quotes Page 😃🥲😐
 Data shown: Random inspirational quote 
     API Used: ```http GET https://zenquotes.io/api/quotes/9d37e36685009a0daa662617d3288c54 - This API will fetch all of the random quotes when the user first opens up the page.
 ```
+Data Show: Users can ask for a new quote and save it to the "Saved Quotes" page.
+Voice Commands: This can be done by the voice commands by saying out loud: "new quote", "save", "quote".
+    API Used: https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js
 ---
 # Browse by Author
 Data shown🔬: 
