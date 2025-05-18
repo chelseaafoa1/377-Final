@@ -19,3 +19,5 @@ This is a link to the Developer Manual for more information on the API, setup, a
 
 # Vercel
 https://377-final.vercel.app/
+https://377-final-git-main-chelseas-projects-c9555d21.vercel.app/
+https://377-final-9m6svo942-chelseas-projects-c9555d21.vercel.app/
