@@ -16,3 +16,8 @@ It is intended to promote healthy and positive thinking.
 
 # Developer Manual
 This is a link to the Developer Manual for more information on the API, setup, and more!: https://docs.google.com/document/d/1z8aCwVu_IIKWzJDQyyzq97m-uVQ79dqP1DNmLw7-Rg4/edit?tab=t.0
+
+# Vercel
+377-final.vercel.app+1
+377-final-git-main-chelseas-projects-c9555d21.vercel.app
+377-final-9m6svo942-chelseas-projects-c9555d21.vercel.app
