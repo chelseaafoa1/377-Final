@@ -2,10 +2,9 @@
 
 # Project Description
 The Daily Quote & Inspiration Web App is a place designed to inspire users with a daily dose of inspiration.
-It will send inspirational quotes randomly from a public API. With this public API it will give users:
-1. Search their favorites quotes using key terms or an author of their choice
-2. The option to refresh for new quotes
-3. Have access to daily quotes
+It will send inspirational quotes randomly from a public API. With this public API it will allow users:
+1. Generate random inspirational and motivational quotes
+2. Save their favorite quotes to the "Saved Quotes" page
 
 This website was created as a way to provide people with mental health support through inspirational and motivational quotes.
 It is intended to promote healthy and positive thinking.
