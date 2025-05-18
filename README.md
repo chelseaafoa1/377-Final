@@ -17,3 +17,6 @@ It is intended to promote healthy and positive thinking.
 
 # Developer Manual
 This is a link to the Developer Manual for more information on the API, setup, and more!: https://github.com/chelseaafoa1/377-Final/blob/main/docs
+
+# Vercel:
+https://377-final-git-main-chelseas-projects-c9555d21.vercel.app/
