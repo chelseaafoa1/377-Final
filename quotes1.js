@@ -44,7 +44,7 @@ function saveRecentQuote() { //SAVERECENTQUOTE
   const cleanedQuote = text.replace(/"/g, "").trim();
   const cleanedAuthor = author.trim();
 
-  console.log("✅ Trying to save:", cleanedQuote, cleanedAuthor); // ✅ now they exist
+  console.log("Trying to save:", cleanedQuote, cleanedAuthor); // 
   saveQuote(cleanedQuote, cleanedAuthor);
 }
 
