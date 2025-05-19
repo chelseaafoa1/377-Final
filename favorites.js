@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('http://localhost:3000/api/getFavs')
+  fetch('/api/getFavs')
     .then(res => res.json())
     .then(data => {
       const container = document.getElementById('favorites-list'); //FAVORITES
