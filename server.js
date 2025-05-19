@@ -32,7 +32,6 @@ app.get('/api/getFavs', async (req, res) => {
     .order('id', { ascending: false });
 
   if (error) {
-    //console.error("Supabase fetch error:", error);
     return res.status(500).json({ error: error.message });
   }
 
