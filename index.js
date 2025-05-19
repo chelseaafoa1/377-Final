@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import { supabase } from './supabase_client.js';
+import { createServer } from '@vercel/node';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -46,3 +47,4 @@ app.get('/api/getFavs', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+export default app;
