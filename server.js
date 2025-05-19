@@ -13,15 +13,12 @@ app.use(bodyParser.json());
 
 app.post('/api/addFavs', async (req, res) => {
   const { quote, author } = req.body;
-  //console.log("💾 Trying to save:", quote, author);
-  //console.log("📦 Payload going to Supabase:", { quote, author }); // 
-
+ 
   const { data, error } = await supabase
     .from('quotes') // 
     .insert([{ quote, author }]);
 
   if (error) {
-    //console.error(" Supabase insert error:", error);
     return res.status(500).json({ error: error.message });
   }
 
